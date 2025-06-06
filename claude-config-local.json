@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "ssh": {
+      "command": "node",
+      "args": ["index.js"],
+      "env": {}
+    }
+  }
+}

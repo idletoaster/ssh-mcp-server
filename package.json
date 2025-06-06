@@ -1,0 +1,52 @@
+{
+  "name": "ssh-mcp-server",
+  "version": "2.0.2",
+  "description": "SSH MCP Server - Connect to remote servers via SSH and execute commands through Model Context Protocol (Node.js implementation)",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "ssh-mcp-server": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "mcp",
+    "ssh",
+    "ai",
+    "claude",
+    "remote",
+    "server",
+    "automation",
+    "nodejs",
+    "model-context-protocol"
+  ],
+  "author": "idletoaster",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idletoaster/ssh-mcp-server.git"
+  },
+  "homepage": "https://github.com/idletoaster/ssh-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/idletoaster/ssh-mcp-server/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "ssh2": "^1.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}
