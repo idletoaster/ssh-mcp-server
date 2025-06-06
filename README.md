@@ -1,6 +1,6 @@
 # 🚀 SSH MCP Server (Node.js)
 
-[![NPM Version](https://img.shields.io/npm/v/ssh-mcp-server)](https://www.npmjs.com/package/ssh-mcp-server)
+[![NPM Version](https://img.shields.io/npm/v/@idletoaster/ssh-mcp-server)](https://www.npmjs.com/package/@idletoaster/ssh-mcp-server)
 [![GitHub Issues](https://img.shields.io/github/issues/idletoaster/ssh-mcp-server)](https://github.com/idletoaster/ssh-mcp-server/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
@@ -28,10 +28,10 @@ A secure, high-performance **Model Context Protocol (MCP) server** that enables 
 ### Installation & Usage
 ```bash
 # Use directly with NPX (recommended)
-npx ssh-mcp-server@latest
+npx @idletoaster/ssh-mcp-server@latest
 
 # Or install globally
-npm install -g ssh-mcp-server
+npm install -g @idletoaster/ssh-mcp-server
 ```
 
 ### Claude Desktop Configuration
@@ -42,7 +42,7 @@ Add to your Claude Desktop MCP configuration file:
   "mcpServers": {
     "ssh": {
       "command": "npx",
-      "args": ["-y", "ssh-mcp-server@latest"],
+      "args": ["-y", "@idletoaster/ssh-mcp-server@latest"],
       "env": {}
     }
   }
@@ -224,7 +224,7 @@ node --version  # Should be 18+
 npm --version   # Should be 9+
 
 # Test NPX execution
-npx ssh-mcp-server@latest --help
+npx @idletoaster/ssh-mcp-server@latest --help
 ```
 
 ---
@@ -261,7 +261,7 @@ npx ssh-mcp-server@latest --help
 
 ### 🔄 Migration Steps
 1. **Uninstall old version**: Remove Go-based installation
-2. **Install new version**: `npx ssh-mcp-server@latest`
+2. **Install new version**: `npx @idletoaster/ssh-mcp-server@latest`
 3. **Update Claude config**: Same configuration works!
 4. **Test connection**: Verify SSH functionality
 

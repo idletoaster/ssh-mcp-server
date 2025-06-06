@@ -1,5 +1,5 @@
 {
-  "name": "ssh-mcp-server",
+  "name": "@idletoaster/ssh-mcp-server",
   "version": "2.0.3",
   "description": "SSH MCP Server - Connect to remote servers via SSH and execute commands through Model Context Protocol (Node.js implementation)",
   "main": "index.js",
