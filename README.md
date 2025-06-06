@@ -303,7 +303,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 - 📋 **Issues**: [GitHub Issues](https://github.com/idletoaster/ssh-mcp-server/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/idletoaster/ssh-mcp-server/discussions)
-- 📧 **Email**: [idletoaster@gmail.com](mailto:idletoaster@gmail.com)
+
 
 ---
 
