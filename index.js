@@ -55,7 +55,7 @@ class SSHMCPServer {
     this.server = new Server(
       {
         name: 'ssh-mcp-server',
-        version: '2.0.2',
+        version: '2.0.3',
       },
       {
         capabilities: {
@@ -170,7 +170,7 @@ class SSHMCPServer {
   async start() {
     const transport = new StdioServerTransport();
     await this.server.connect(transport);
-    console.error('SSH MCP Server running on stdio (Node.js v2.0.2)');
+    console.error('SSH MCP Server running on stdio (Node.js v2.0.3)');
   }
 }
 
