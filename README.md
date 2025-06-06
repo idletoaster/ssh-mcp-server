@@ -1,6 +1,7 @@
 # 🚀 SSH MCP Server (Node.js)
 
 [![NPM Version](https://img.shields.io/npm/v/@idletoaster/ssh-mcp-server)](https://www.npmjs.com/package/@idletoaster/ssh-mcp-server)
+[![smithery badge](https://smithery.ai/badge/@idletoaster/ssh-mcp-server)](https://smithery.ai/server/@idletoaster/ssh-mcp-server)
 [![GitHub Issues](https://img.shields.io/github/issues/idletoaster/ssh-mcp-server)](https://github.com/idletoaster/ssh-mcp-server/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
@@ -24,6 +25,14 @@ A secure, high-performance **Model Context Protocol (MCP) server** that enables 
 ---
 
 ## 🚀 Quick Start
+
+### Installing via Smithery
+
+To install ssh-mcp-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@idletoaster/ssh-mcp-server):
+
+```bash
+npx -y @smithery/cli install @idletoaster/ssh-mcp-server --client claude
+```
 
 ### Installation & Usage
 ```bash
