@@ -7,7 +7,7 @@
 
 A secure, high-performance **Model Context Protocol (MCP) server** that enables AI assistants like Claude Desktop to execute SSH commands on remote servers. Built with Node.js and the official MCP SDK for maximum compatibility and reliability.
 
-> **🔄 Version 2.0**: Complete rewrite in Node.js with official MCP SDK - eliminates all previous Go compatibility issues!
+> **🔄 Version 2.0.3**: Complete rewrite in Node.js with official MCP SDK - eliminates all previous Go compatibility issues!
 
 ---
 
