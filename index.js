@@ -306,7 +306,7 @@ class SSHMCPServer {
       
       total_lines=$(wc -l < "${filePath}")
       echo "File: ${filePath} (${total_lines} total lines)"
-      echo "Reading lines ${startLine}-${endLine || 'end'} (max ${maxLines})"
+      echo "Reading lines ${startLine}-${endLine:-end} (max ${maxLines})"
       echo "--- Content ---"
       ${readCommand}
     `;
