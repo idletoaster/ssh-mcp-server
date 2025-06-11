@@ -11,7 +11,7 @@ import {
 import { SSHClient } from './lib/ssh-client.js';
 
 /**
- * SSH MCP Server v2.1.1 - Enhanced with Desktop Commander functionality
+ * SSH MCP Server v2.1.7 - Enhanced with Desktop Commander functionality
  * Enables AI assistants to execute SSH commands with token-efficient file operations
  * Built with official Model Context Protocol SDK
  */
@@ -130,7 +130,7 @@ class SSHMCPServer {
     this.server = new Server(
       {
         name: 'ssh-mcp-server',
-        version: '2.1.0',
+        version: '2.1.7',
       },
       {
         capabilities: {
@@ -305,8 +305,8 @@ class SSHMCPServer {
       fi
       
       total_lines=$(wc -l < "${filePath}")
-      echo "File: ${filePath} (${total_lines} total lines)"
-      echo "Reading lines ${startLine}-${endLine:-end} (max ${maxLines})"
+      echo "File: ${filePath} (\${total_lines} total lines)"
+      echo "Reading lines ${startLine}-\${endLine || 'end'} (max ${maxLines})"
       echo "--- Content ---"
       ${readCommand}
     `;
@@ -459,7 +459,7 @@ class SSHMCPServer {
   async start() {
     const transport = new StdioServerTransport();
     await this.server.connect(transport);
-    console.error('SSH MCP Server v2.1.1 running on stdio (Enhanced with token-efficient tools)');
+    console.error('SSH MCP Server v2.1.7 running on stdio (Enhanced with token-efficient tools)');
   }
 }
 
