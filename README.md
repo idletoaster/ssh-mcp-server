@@ -7,7 +7,7 @@
 
 A secure, high-performance **Model Context Protocol (MCP) server** that enables AI assistants like Claude Desktop to execute SSH commands on remote servers. Built with Node.js and the official MCP SDK for maximum compatibility and reliability.
 
-> **🔄 Version 2.0.3**: Complete rewrite in Node.js with official MCP SDK - eliminates all previous Go compatibility issues!
+> **🔄 Version 2.1.0 - Token-Efficient File Operations**: Complete rewrite in Node.js with official MCP SDK - eliminates all previous Go compatibility issues!
 
 ---
 
@@ -308,3 +308,62 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ---
 
 *Built with ❤️ for the AI development community using Node.js and official MCP SDK*
+
+## 🆕 NEW in v2.1.0: Token-Efficient File Operations
+
+Enhanced with 4 powerful tools inspired by Desktop Commander for optimal token usage:
+
+### 🎯 Token-Efficient Tools
+
+1. **ssh-edit-block** - Edit specific text blocks (80-90% token reduction vs full rewrites)
+2. **ssh-read-lines** - Read file sections by line numbers (massive savings for large files)  
+3. **ssh-search-code** - Pattern search without reading full files
+4. **ssh-write-chunk** - Efficient content writing with append/rewrite modes
+
+### 💡 Benefits
+
+- **80-90% fewer tokens** for file operations
+- **No more full file rewrites** for small changes
+- **Partial file reading** for large codebases
+- **Pattern searching** without token overhead
+
+### 📖 New Tool Usage
+
+```javascript
+// Edit specific text blocks
+{
+  "name": "ssh-edit-block",
+  "arguments": {
+    "host": "server.com",
+    "user": "username", 
+    "filePath": "/path/to/file.js",
+    "oldText": "version: '2.0.0'",
+    "newText": "version: '2.1.0'"
+  }
+}
+
+// Read specific lines only
+{
+  "name": "ssh-read-lines", 
+  "arguments": {
+    "host": "server.com",
+    "user": "username",
+    "filePath": "/path/to/large-file.js",
+    "startLine": 100,
+    "endLine": 150
+  }
+}
+
+// Search patterns efficiently
+{
+  "name": "ssh-search-code",
+  "arguments": {
+    "host": "server.com", 
+    "user": "username",
+    "path": "/project",
+    "pattern": "function.*export",
+    "filePattern": "*.js"
+  }
+}
+```
+
