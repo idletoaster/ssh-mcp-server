@@ -1,11 +1,11 @@
 {
-  "name": "idletoaster-ssh-mcp-server",
+  "name": "@idletoaster/ssh-mcp-server",
   "version": "2.1.5",
   "description": "SSH MCP Server v2.1.0 - Enhanced with token-efficient file operations for remote development",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "idletoaster-ssh-mcp-server": "./index.js"
+    "@idletoaster/ssh-mcp-server": "./index.js"
   },
   "files": [
     "index.js",
